@@ -1,3 +1,3 @@
 # portfolio-website
 My personal portfolio website built with HTML, CSS, and JavaScript.
-Completing and Completing.
+Competing and Completing.

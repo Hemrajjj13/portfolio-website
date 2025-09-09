@@ -1,7 +1,15 @@
-# portfolio-website
-My personal portfolio website built with HTML, CSS, and JavaScript.
-<<<<<<< HEAD
-Still Building.
-=======
-Competing and Completing.
->>>>>>> 0fd9c5cf7709fc42e7f68f5f5cf963cef08051b6
+# Portfolio Website
+
+🚧 Work in Progress 🚧  
+
+This is my personal portfolio website, currently being built with **HTML**, **CSS**, and **JavaScript**.  
+The goal is to showcase my projects, skills, and achievements in a clean and responsive design.
+
+## To Do
+- [ ] Finish homepage layout  
+- [ ] Add project showcase section  
+<!-- - [ ] Create contact form  
+- [ ] Polish responsive design   -->
+
+## 📬 Contact
+- **GitHub:** [Hemrajjj13](https://github.com/Hemrajjj13)

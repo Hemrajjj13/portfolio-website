@@ -1,83 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hemraj — Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hemraj Suryawanshi</h1>
-    <p>Aspiring Full-Stack Devloper | Building Skills step by step 🚀</p>
-    <nav>
-      <a href="#about">About</a> | <a href="#skills">Skills</a> |
-      <a href="#projects">Skills</a> |
-      <a href="contact">Contact</a>
-    </nav>
-
-    <br />
-    <img
-      src="ProfilePic.png"
-      alt="My Profile Picture"
-      height="200"
-      width="200"
-    />
-
-    <section id="about">
-      <h2>About Me</h2>
-      <blockquote>
-        <p>
-          I am Hemraj, learning full-stack development step by step. My goal is
-          to become a master developer in 6 months.
-        </p>
-        <p></p>
-      </blockquote>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill-card">
-          <h3>Languages</h3>
-          <p>Java, JavaScript, HTML, CSS</p>
-        </div>
-        <div class="skill-card">
-          <h3>Frontend</h3>
-          <p>React, Tailwind CSS</p>
-        </div>
-        <div class="skill-card">
-          <h3>Backend</h3>
-          <p>Node.js, Express.js, MongoDB</p>
-        </div>
-        <div class="skill-card">
-          <h3>Version Control</h3>
-          <p>Git, GitHub</p>
-        </div>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">Hemraj</div>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
       </div>
-    </section>
+    </header>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>My Portfolio Website</strong> – A personal website to showcase
-          my journey as a full-stack developer.
-          <a href="https://github.com/Hemrajjj13/portfolio-website" target="_blank">View Code</a>
-        </li>
-      </ul>
-    </section>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Hi, my name is</p>
+            <h1 class="hero-title">Hemraj Suryawanshi</h1>
+            <p class="hero-sub">
+              Aspiring Full-Stack Developer • Building projects & practicing
+              daily
+            </p>
+            <p><a class="cta" href="#contact">Get in touch</a></p>
+          </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:hemrajdasu@gmail.com">hemrajdasu@gmail.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/hemrajsuryawanshi/" target="_blank"
-          >linkedin.com/in/hemrajsuryawanshi</a
-        >
-      </p>
-    </section>
+          <div class="hero-image">
+            <img src="Hemraj.png" alt="Hemraj profile" class="profile-img" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I am a learner-focused developer building full-stack skills. I help
+            small businesses go online with clean, fast websites.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Languages</h3>
+              <p>HTML • CSS • Java</p>
+            </div>
+            <div class="skill-card">
+              <h3>Tools</h3>
+              <p>Git • GitHub • VS Code</p>
+            </div>
+            <div class="skill-card">
+              <h3>Learning</h3>
+              <p>React • Node.js • MongoDB • JavaScript </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>Portfolio Website</h3>
+              <p>Personal portfolio (this site).</p>
+              <a href="https://github.com/Hemrajjj13" target="_blank"
+                >View code</a
+              >
+            </article>
+            <article class="project-card">
+              <h3><a href="pet-adoption-mu-three.vercel.app">Pet Adoption App</a></h3>
+              <p>A web application that helps users explore pets available for adoption, built with modern web technologies.</p>
+              <a href="https://github.com/Hemrajjj13/pet-adoption" target="_blank"
+                >View code</a
+              >
+            </article>
+            <article class="project-card">
+              <h3><a href="https://sidebar-navigation-menu-5vum.vercel.app/">Sidebar navigation menu</a></h3>
+              <p>A responsive sidebar navigation menu built with HTML, CSS, and Font Awesome icons. The sidebar smoothly slides in and out using a checkbox toggle trick without requiring JavaScript.</p>
+              <a href="https://github.com/Hemrajjj13/Sidebar-navigation-menu" target="_blank">View Code</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Email:
+            <a href="mailto:hemrajdasu@gmail.com">hemrajdasu@gmail.com</a>
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/hemrajsuryawanshi/"
+              target="_blank"
+              >hemrajsuryawanshi</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2025 Hemraj Suryawanshi</small>
+      </div>
+    </footer>
+
   </body>
 </html>

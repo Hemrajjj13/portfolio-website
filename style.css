@@ -21,3 +21,92 @@ body {
     line-height: 1.6;
 }
 
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+}   
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    padding: 15px 0;
+
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.theme-toggle,
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+}
+
+.mobile-nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 0;
+}

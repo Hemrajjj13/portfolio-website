@@ -1,60 +1,23 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-    background-color: black;
+* {
     margin: 0;
     padding: 0;
-}
-.header {
-    background-color: rgba(58, 58, 60, 0.5); /* 0.5 = 50% opacity */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 20px;
-    color: white;
-    width: auto;
-    height: auto;
-    margin: 20px 20px;
-    text-align: center;
-    font-size: 25px;
+    box-sizing: border-box;
 }
 
-.intro {
-    background-color: rgba(58, 58, 60, 0.5); /* 0.5 = 50% opacity */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 20px;
-    color: white;
-    width: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 20px;
+:root {
+    --bg: #000;              /* page background */
+    --text: #ffffff;         /* normal text */
+    --text-light: #cccccc;   /* lighter text */
+    --accent: #66b2ff;       /* buttons / links */
+    --glass-bg: rgba(255,255,255,0.10);
+    --glass-hover: rgba(255,255,255,0.18);
+    --glass-border: rgba(255,255,255,0.25);
 }
 
-.intro-in {
-    width: 50%;
-
-}
-.intro-in img {
-    border-radius: 50%;
-    border: 5px solid rgba(255, 255, 255, 0.501);
-}
-.intro-in h1 {
-    padding-left: 0;
-    align-self: flex-start;
-    font-weight: bold;padding-bottom: 20px;
-}
-.intro-in p {
-    font-weight: 400;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: justify;
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
 }
 

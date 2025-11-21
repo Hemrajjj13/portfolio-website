@@ -347,3 +347,20 @@ html {
 .back-to-top:hover {
     opacity: 0.7;
 }
+
+
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+}
+
+.glass:hover {
+    background: var(--glass-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(255,255,255,0.08);
+}

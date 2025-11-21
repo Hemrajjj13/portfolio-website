@@ -230,13 +230,13 @@ html {
     gap: 25px;
 }
 
-.projects-card {
+.project-card {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
 }
 
-.projects-card img {
+.project-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -259,3 +259,51 @@ html {
     opacity: 1;
 }
 
+#contact h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#contact form {
+    max-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact label {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255,255,255,0.05);
+    color: var(--text);
+    font-size: 1rem;
+    resize: none;
+}
+
+#contact textarea {
+    min-height: 120px;
+}
+
+#contact button {
+    padding: 12px;
+    background-color: var(--accent);
+    border: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contact button:hover {
+    opacity: 0.85;
+}

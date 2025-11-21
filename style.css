@@ -1,3 +1,23 @@
+
+@media (max-width: 780px) {
+  .hero-section .container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 90px; /* a bit less on mobile */
+    gap: 20px;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -160,3 +180,32 @@ html {
     border: 3px solid var(--glass-border);
 }
 
+.about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-intro,
+.about-details {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.about-list {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.about-list li {
+    color: var(--text);
+    margin-bottom: 8px;
+    font-size: 1rem;
+}

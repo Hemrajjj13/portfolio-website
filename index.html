@@ -40,7 +40,7 @@
                 <h1 class="hero-name">Hemraj Suryawanshi</h1>
 
                 <h2 class="hero-role">
-                    I am <span id="typing"></span>
+                    I am <span id="typing"></span><span class="cursor">|</span>
                 </h2>
                 <p class="hero-description">
                     I'm an aspiring Full Stack Software Engineer focused on building clean, maintainable, and user-centric web applications.
@@ -57,9 +57,9 @@
         <div class="container glass">
             <h2 class="about-title">About Me</h2>
 
-            <p class="about-intro">I’m a passionate and dedicated aspiring Full Stack Software Engineer who enjoys solving real-world problems through code. I love understanding how things work, breaking down complex ideas, and turning them into simple, functional, and clean solutions.</p>
+            <p class="about-intro">I’m a passionate and dedicated aspiring Full Stack Software Engineer who enjoys solving problems through code. I love understanding how things work, breaking down complex ideas, and turning them into simple, functional, and clean solutions.</p>
             
-            <p class="about-intro">I actively practice Data Structures and Algorithms in Java, improving my logical thinking and problem-solving ability. Platforms like LeetCode help me sharpen my skills, understand patterns, and approach challenges with a structured mindset. Problem-solving has become a daily habit that pushes me to grow as a developer.</p>
+            <p class="about-intro">I actively practice Data Structures and Algorithms in Java, improving my logical thinking and problem-solving ability. Problem-solving has become a daily habit that pushes me to grow as a developer.</p>
 
             <p class="about-details">
                 I’m currently learning the MERN stack and improving my problem-solving skills through Java and DSA. I enjoy creating projects that challenge me and help me grow as a developer.
@@ -155,21 +155,23 @@
 
     <section id="contact">
         <div class="container">
-            <h2>
-                <span id="contact-typing"></span>
-            </h2>
+            <h2>Contact Me</h2>
             
-            <form class="glass">
+            <form id="contact-form" class="glass">
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" placeholder="Enter name" required>
+                <input type="text" id="name" name="name" placeholder="Enter name" required>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" placeholder="Enter email" required>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
 
                 <label for="message">Leave a message:</label>
-                <textarea id="message" placeholder="Enter your message" required></textarea>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
                 <button type="submit">Send Message</button>
+
+                <p id="form-status" style="color: var(--accent); margin-top: 10px;"></p>
+
+
             </form>
         </div>
     </section>
@@ -206,6 +208,6 @@
     </section>
 
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
